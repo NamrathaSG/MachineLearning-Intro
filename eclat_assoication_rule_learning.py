@@ -29,7 +29,7 @@ def inspect(results):
     rhs         = [tuple(result[2][0][1])[0] for result in results]
     supports    = [result[1] for result in results]
     return list(zip(lhs, rhs, supports))
-resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Product 1', 'Product 2', 'Support'])
+resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Product 1', 'Product 2', 'Support']) # changes with respectto dataset 
 
 ## Displaying the results sorted by descending supports
 resultsinDataFrame.nlargest(n = 10, columns = 'Support')
