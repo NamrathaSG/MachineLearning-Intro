@@ -9,8 +9,8 @@ tf.__version__
 # Part 1 - Data Preprocessing
 
 # Importing the dataset
-dataset = pd.read_csv('Churn_Modelling.csv')
-X = dataset.iloc[:, 3:-1].values
+dataset = pd.read_csv('Enter_the_name_of_your_file.csv')
+X = dataset.iloc[:, 3:-1].values # subject to dataset
 y = dataset.iloc[:, -1].values
 print(X)
 print(y)
