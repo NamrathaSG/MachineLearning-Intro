@@ -49,3 +49,5 @@ The following contains a list of all codes along with sample datasets(curtosy:ka
 
 **10. Model Selection & Boosting**
 - (XGBoost)
+
+PS: By convention, in all the files, the dependent variable 'y' is taken to be in the **1st Column** and the only change you will need to make is with teh name of your file( in place of **Enter_the_name_of_your_file.csv**)
