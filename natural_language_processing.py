@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3)
+dataset = pd.read_csv('Enter_the_name_of_your_file.tsv', delimiter = '\t', quoting = 3) # tsv or csv , delimiter subject to data type 
 
 # Cleaning the texts
 import re
