@@ -6,15 +6,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Mall_Customers.csv')
-X = dataset.iloc[:, [3, 4]].values
+dataset = pd.read_csv('Enter_the_name_of_your_file.csv')
+X = dataset.iloc[:, [a, b]].values # change it depending on your data and replace a and b 
 
 # Using the dendrogram to find the optimal number of clusters
 import scipy.cluster.hierarchy as sch
 dendrogram = sch.dendrogram(sch.linkage(X, method = 'ward'))
 plt.title('Dendrogram')
-plt.xlabel('Customers')
-plt.ylabel('Euclidean distances')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.show()
 
 # Training the Hierarchical Clustering model on the dataset
@@ -28,8 +28,10 @@ plt.scatter(X[y_hc == 1, 0], X[y_hc == 1, 1], s = 100, c = 'blue', label = 'Clus
 plt.scatter(X[y_hc == 2, 0], X[y_hc == 2, 1], s = 100, c = 'green', label = 'Cluster 3')
 plt.scatter(X[y_hc == 3, 0], X[y_hc == 3, 1], s = 100, c = 'cyan', label = 'Cluster 4')
 plt.scatter(X[y_hc == 4, 0], X[y_hc == 4, 1], s = 100, c = 'magenta', label = 'Cluster 5')
-plt.title('Clusters of customers')
-plt.xlabel('Annual Income (k$)')
-plt.ylabel('Spending Score (1-100)')
+plt.title('clustering')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.legend()
-plt.show()
+plt.show() 
+
+# the code is a sample, you will need to tweak it based on your data 
