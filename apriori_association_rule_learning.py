@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Data Preprocessing
-dataset = pd.read_csv('Market_Basket_Optimisation.csv', header = None)
+dataset = pd.read_csv('Enter_the_name_of_your_file.csv', header = None) # none, if your dataset doesn;t have any header
 transactions = []
-for i in range(0, 7501):
+for i in range(0, 7501): # varies depening on your dataset
   transactions.append([str(dataset.values[i,j]) for j in range(0, 20)])
 
 # Training the Apriori model on the dataset
