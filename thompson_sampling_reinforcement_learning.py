@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
+dataset = pd.read_csv('Enter_the_name_of_your_file.csv')
 
 # Implementing Thompson Sampling
 import random
@@ -34,7 +34,7 @@ for n in range(0, N):
 
 # Visualising the results - Histogram
 plt.hist(ads_selected)
-plt.title('Histogram of ads selections')
-plt.xlabel('Ads')
-plt.ylabel('Number of times each ad was selected')
+plt.title('Histogram')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.show()
